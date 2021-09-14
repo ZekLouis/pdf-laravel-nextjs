@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    exec("curl --request POST 'http://gotenberg:3000/forms/chromium/convert/url' --form 'url=\"https://pro.iconosquare.com\"' -o /var/www/html/pdf.pdf", $output, $result_code);
+
+    dump($result_code);
+    dd($output);
+
     return view('welcome');
 });
