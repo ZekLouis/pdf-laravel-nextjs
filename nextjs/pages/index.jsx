@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Chart from '../src/Chart';
+import Link from 'next/link';
 
 export default function Home() {
     return (
@@ -14,7 +15,23 @@ export default function Home() {
                     Welcome to <a href="https://nextjs.org">Next.js!</a>
                 </h1>
 
-                <Chart />
+                <ul className="mt-5 flex items-center space-x-5">
+                    <li>
+                        <Link href="/printgrid">
+                            <a className="underline">Print grid 🧮</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/printflex">
+                            <a className="underline">Print Flex 🌪</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/printtable">
+                            <a className="underline">Print table 🖼</a>
+                        </Link>
+                    </li>
+                </ul>
             </main>
         </div>
     );
