@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    exec("curl --request POST 'http://gotenberg:3000/forms/chromium/convert/url' --form 'url=\"http://nextjs:3000/louis\"' -o /var/www/html/test.pdf");
+    foreach (['flex', 'grid', 'table'] as $type) {
+        exec("curl --request POST 'http://gotenberg:3000/forms/chromium/convert/url' --form 'url=\"http://nextjs:3000/print$type\"' --form 'landscape=\"true\"' -o /var/www/html/gotenberg-$type.pdf");
+    }
     return view('welcome');
 });
