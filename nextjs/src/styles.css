@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer utilities {
+    body {
+        width: 1400px;
+    }
     .break-after {
-        break-after: always;
-        page-break-after: always;
+        page-break-inside: avoid;
+        position: relative;
+        height: 950px;
     }
 }

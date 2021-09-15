@@ -10,7 +10,7 @@ export default function PrintTable() {
                         <Chart className="w-full" />
                     </td>
                 </tr>
-                <tr class="break-after">
+                <tr>
                     <td className="p-4">
                         <KPI />
                     </td>
@@ -27,7 +27,7 @@ export default function PrintTable() {
                         <Chart className="w-full" />
                     </td>
                 </tr>
-                <tr class="break-after">
+                <tr>
                     <td className="p-4">
                         <KPI />
                     </td>

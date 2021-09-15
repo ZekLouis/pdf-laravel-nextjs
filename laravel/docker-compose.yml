@@ -22,18 +22,6 @@ services:
             - '2000:3000'
         networks:
             - sail
-    puppeteer:
-        container_name: "puppeteer_pdf"
-        build:
-            context: ./../pdf-rendering-srv
-            dockerfile: Dockerfile
-        volumes:
-            - './puppeteer:/home/node/srv/files'
-        ports:
-            - '2001:9000'
-            - '2002:9222'
-        networks:
-            - sail
     nextjs:
         container_name: "nextjs_pdf"
         image: node:15
