@@ -27,6 +27,8 @@ services:
         build:
             context: ./../pdf-rendering-srv
             dockerfile: Dockerfile
+        volumes:
+            - './puppeteer:/home/node/srv/files'
         ports:
             - '2001:9000'
             - '2002:9222'
