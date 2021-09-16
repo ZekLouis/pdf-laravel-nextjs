@@ -7,8 +7,15 @@
         width: 1400px;
     }
     .break-after {
+        width: 100%;
         page-break-inside: avoid;
         position: relative;
-        height: 950px;
+        height: 900px;
+    }
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
     }
 }

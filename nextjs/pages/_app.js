@@ -2,7 +2,7 @@ import '../src/styles.css';
 
 function MyApp({ Component, pageProps }) {
     return (
-        <div className="flex items-center min-h-screen justify-center p-12 bg-icoGray-100">
+        <div className="min-h-screen p-12">
             <Component {...pageProps} />
         </div>
     );

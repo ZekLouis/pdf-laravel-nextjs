@@ -5,7 +5,7 @@ const KPI = ({ className }) => {
         <div
             className={clsx(
                 className,
-                'p-12 bg-white rounded-md flex justify-center items-center'
+                'p-12 shadow-xl rounded-md flex justify-center items-center'
             )}>
             <div className="h-17 w-17 rounded-full bg-icoBlue-200 mr-5"></div>
             <div>
